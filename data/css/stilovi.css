@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    
+    font-family:'FontAwesome';
+    max-width: 100%;
+    background-image: url("/data/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 16px;
+    line-height: 22px;
+ 
+}
+
+
+.container {
+    background-color: white;
+    padding: 0;
+    border-right: 18px solid white;
+    border-left: 18px solid white;
+}
+
+.zaglavlje {
+    height: 170px;
+    background-image: url("/data/img/navBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+  
+}
+
+.search {
+    width: 15%;
+}
+
+.navbar-color {
+    background-color: #1E67EB;
+}
+
+.btn-hover {
+    margin-right: 2px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight:bolder ;
+    min-height: 15px;
+    background-color: transparent;
+    border-right: 1px solid #006ac5;
+    font-family: sans-serif;
+    padding-right: 3px;
+}
+
+
+
+.btn-hover:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+
+.navbar button.navbar-toggler{
+    color: white;
+}
+
+.top-logo {
+    font-family: sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.white-font {
+    color: white;
+}
+
+.container-content-grid {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+    border-right: 18px solid white;
+    border-left: 18px solid white;
+
+
+    grid-template:4fr 4fr 1fr / repeat(4, 1fr);
+    grid-template-areas:
+    "kat sad sad sad"
+    "tag sad sad sad"
+    "pod pod pod pod";
+}
+
+.sadrzaj {
+    max-width: 100%;
+    height: auto;
+    grid-area: sad;
+    padding-left: 3%;
+}
+
+.kategorije {
+    grid-area: kat;
+}
+
+.naslov {
+    display: block;
+    background-color: #1E67EB;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.tagovi {
+    grid-area: tag;
+}
+.podnozje {
+    grid-area: zag;
+    background-color: #303030;
+    color: #e2e2e2;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template:1fr 100px / repeat(4, 1fr);
+    grid-template-areas:
+    "inf inf inf inf"
+    "pow pow pow pow";
+    border-right: 18px solid white;
+    border-left: 18px solid white;
+}
+
+.podnozje h5 {
+    color: #fff;
+}
+
+.podnozje a {
+    color: #ccc;
+}
+
+.flex-column {
+    display: flex;
+}
+
+.row-sad {
+    grid-area: sad;
+}
